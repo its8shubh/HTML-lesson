@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component library</title>
+
+    <!-- CSS way 1 : style tag
+    <style>
+        body{
+            color : gray;
+        }
+    </style> -->
+    <!--  Third way of doing CSS : external link-->
+    <link href="style.css" rel="stylesheet"/>
 </head>
+
 <body>
-    <h1>My Component library</h1>
-    <p>I want to make a library which would make all my projects look good and consistent.</p>
+
+    <!-- Way 2 style = color : red -->
+    <h1 id="lib-header">My Component library</h1>
+    <p class="para">I want to make a library which would make all my projects look good and consistent.</p>
 
     <hr>
     <h2>@typography</h2>
@@ -23,7 +36,7 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is a centered container and it will got till the specified width.</div>
+    <div class="para">This is a centered container and it will got till the specified width.</div>
 
     <h3>center container</h3>
     <div>This is a centered container and it will go till the specifies width.</div>
@@ -60,5 +73,62 @@
         <li>bread</li>
     </ol>
 
+
+    <hr>
+    <h2>@nav</h2>
+    <nav>
+        <div>iAmBrand</div>
+        <ul>
+            <li>
+                <a href="/">home</a>
+            </li>
+            <li>
+                <a href="/">products</a>
+            </li>
+            <li>
+                <a href="/">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h2>header</h2>
+    <header>
+        <img src="images/hero-image.svg" />
+        <h1>heading inside hero</h1>
+    </header>
+
+
+
+    <hr>
+    <h2>@section</h2>
+
+    <section>
+        <h3>white section</h3>
+        <p>this will have white background.</p>
+    </section>
+
+
+    <section>
+        <h3>off white section</h3>
+        <p>this will have grey background.</p>
+    </section>
+
+
+    <hr>
+
+    <h2>@footer</h2>
+    <footer>
+        <div>some small heading inside footer.
+            <ul>
+                <li>socialOne</li>
+                <li>socialTwo</li>
+                <li>socialThree</li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>
